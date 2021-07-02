@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Top from './Top.jsx';
+import Container from '@material-ui/core/Container';
+import Nav from './Nav.jsx';
+import Header from './Header.jsx'
 
-function App(props) {
-  return (
-    <div>
-      <h1>Emmanuel Garcia</h1>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      items: 4,
+    }    
+  }
+
+  render() {
+    let { items } = this.state;
+    return (
+      <div className="App">
+        <Header />
+
+      </div>
+    );
+  }
 }
 
 export default App;
